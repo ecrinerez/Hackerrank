@@ -1,0 +1,32 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String[] args){
+        Scanner in=new Scanner(System.in);
+        float x=in.nextFloat();
+        float p=0,n=0,z=0;
+        for(int i=0;i<x;i++){
+            int count=in.nextInt();
+            if(count>0){
+                p++;
+            }
+            else if(count<0){
+                n++;
+            }
+            else{
+                z++;
+            }
+        }
+   System.out.printf("%.4f\n", p / x);
+   System.out.printf("%.4f\n", n / x);
+   System.out.printf("%.4f\n", z / x);
+
+    }
+}
+     
